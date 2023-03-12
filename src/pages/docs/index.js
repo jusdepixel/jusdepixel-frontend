@@ -10,8 +10,8 @@ const Index = () => {
                 <title>Docs - Index</title>
             </Head>
 
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div className="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
+                <div className="max-w-xl mx-auto sm:px-6 lg:px-8">
                     <ApplicationLogo className="login" />
                     <div className="p-6 text-center mt-5">
                         <h2>Under construction, come back later...</h2>
