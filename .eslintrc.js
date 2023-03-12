@@ -10,10 +10,11 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:prettier/recommended',
+        'plugin:react/jsx-runtime',
     ],
     parserOptions: {
         sourceType: 'module',
-        parser: 'babel-eslint',
+        parser: 'eslint-parser',
         ecmaFeatures: {
             jsx: true,
         },

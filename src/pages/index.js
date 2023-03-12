@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
 import ApplicationLogo from '@/components/ApplicationLogo'
 

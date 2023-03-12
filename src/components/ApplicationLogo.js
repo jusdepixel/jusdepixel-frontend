@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const ApplicationLogo = ({ className }) => (
-    <Link class={`${className} jusdepixel`} href="/">
+    <Link className={`${className} jusdepixel`} href="/">
         Jusdepixel
     </Link>
 )

@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
 import Link from 'next/link'
 import Button from '@/components/Button'
-import { router } from 'next/client'
+import { useRouter } from 'next/router'
 
 const Index = () => {
+    const router = useRouter()
     const [loading, setLoading] = useState(true)
     const [users, setUsers] = useState([])
     const [count, setCount] = useState(0)
