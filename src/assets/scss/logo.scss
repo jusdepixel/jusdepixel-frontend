@@ -1,0 +1,38 @@
+@import "@fontsource/righteous/latin-400.css";
+@import "@fontsource/great-vibes/latin-400.css";
+
+.jusdepixel {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 2.5vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+
+    &::first-letter {
+        font-family: "Great Vibes", sans-serif;
+        font-size: 4.6vh;
+        color: rgb(34 211 238);
+        margin-right: 0.6vh;
+    }
+
+    &.index {
+        opacity: 0;
+        font-size: 8vh;
+        line-height: 18vh;
+        padding-bottom: 18vh;
+        transform: translateY(-50%);
+        transition-duration: 500ms;
+        transition-delay: 100ms;
+        &::first-letter {
+            display: block;
+            font-size: 14vh;
+            margin-right: 1.5vh;
+        }
+    }
+}
+.loaded .jusdepixel.index {
+    opacity: 1;
+    transform: translateY(-25%);
+}
