@@ -14,7 +14,7 @@ const Index = () => {
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <ApplicationLogo className="login" />
                     <div className="p-6 text-center mt-5">
-                        <h2>Under construction, please wait...</h2>
+                        <h2>Under construction, come back later...</h2>
                     </div>
 
                     <Link
