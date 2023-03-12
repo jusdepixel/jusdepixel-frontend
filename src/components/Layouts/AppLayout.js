@@ -1,8 +1,4 @@
-import { useAuth } from '@/hooks/auth'
-
 const AppLayout = ({ header, children }) => {
-    const { user } = useAuth({ middleware: 'auth' })
-
     return (
         <div className="min-h-screen">
             {/* Page Heading */}
