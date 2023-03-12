@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix --ext .js,.jsx ."
+    "lint": "eslint --fix --ext .js,.jsx,.scss ."
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
