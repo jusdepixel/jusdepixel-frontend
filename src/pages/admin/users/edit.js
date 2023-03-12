@@ -1,4 +1,4 @@
-import AppLayout from '@/components/Layouts/AppLayout'
+import AdminLayout from '@/components/Layouts/AdminLayout'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
@@ -60,7 +60,7 @@ const Edit = () => {
     })
 
     return (
-        <AppLayout
+        <AdminLayout
             header={
                 <h2 className="text-gray-600 leading-tight flex flex-row">
                     <span className="basis-2/3 flex">
@@ -176,7 +176,7 @@ const Edit = () => {
             ) : (
                 <></>
             )}
-        </AppLayout>
+        </AdminLayout>
     )
 }
 

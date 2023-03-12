@@ -1,0 +1,8 @@
+.jusdepixel.me {
+    font-size: 8vh;
+    line-height: 18vh;
+    &::first-letter {
+        font-size: 14vh;
+        margin-right: 1.5vh;
+    }
+}

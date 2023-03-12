@@ -16,7 +16,7 @@ const NotFoundPage = () => (
             <Link
                 href="/"
                 className="px-4 font-light text-lg text-gray-500 block text-center mt-5">
-                Go back to home
+                Back to the homepage
             </Link>
         </div>
     </div>

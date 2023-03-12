@@ -1,0 +1,18 @@
+.jusdepixel.index {
+    opacity: 0;
+    font-size: 8vh;
+    line-height: 18vh;
+    padding-bottom: 18vh;
+    transform: translateY(-50%);
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+    &::first-letter {
+        display: block;
+        font-size: 14vh;
+        margin-right: 1.5vh;
+    }
+}
+.loaded .jusdepixel.index {
+    opacity: 1;
+    transform: translateY(-25%);
+}

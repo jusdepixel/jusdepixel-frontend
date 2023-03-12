@@ -1,8 +1,13 @@
 @import "@fontsource/roboto-condensed/300.css";
 @import "@fontsource/roboto-condensed/400.css";
 @import "@fontsource/roboto-condensed/700.css";
+
 @import "background";
 @import "logo";
+@import "index";
+@import "login";
+@import "me";
+@import "domain";
 
 @tailwind base;
 @tailwind components;
@@ -12,165 +17,4 @@ body {
     font-weight: 400;
 }
 
-.loader {
-    opacity: 0;
-    transform: translateY(200%);
-    transition-duration: 500ms;
-}
-.loading .loader {
-    opacity: 1;
-}
 
-.choose-domain {
-    transform: translateY(-35%);
-    .choose-domain-text {
-        opacity: 0;
-        transform: translateY(-50%);
-        transition-duration: 700ms;
-        transition-delay: 700ms;
-    }
-    .video-domain {
-        position: relative;
-        opacity: 0;
-        border-radius: 50%;
-        background-color: white;
-        width: 162px;
-        height: 143px;
-        transition-duration: 700ms;
-        transition-delay: 700ms;
-        overflow: hidden;
-        cursor: pointer;
-        video {
-            position: absolute;
-            height: 286px;
-            left: -12px;
-            top: -52px;
-            opacity: 0.8;
-        }
-        svg {
-            width: 26px;
-            height: 26px;
-            position: absolute;
-            left: 32px;
-            bottom: 7px;
-            color: rgb(34, 211, 238);
-            background: white;
-            border-radius: 50px;
-        }
-        &:hover {
-            svg {
-                color: rgb(75 85 99);
-            }
-        }
-    }
-}
-.loaded .choose-domain {
-    .choose-domain-text {
-        opacity: 1;
-        transform: translateY(50%);
-    }
-    .video-domain {
-        opacity: 1;
-    }
-}
-
-.domains {
-    transform: translateY(-50%);
-    .domain {
-        position: relative;
-        width: 12vh;
-        transform: translateY(0);
-        opacity: 0;
-        transition-duration: 500ms;
-        transition-delay: 100ms;
-
-        &:nth-child(1) {
-            transition-delay: 400ms;
-        }
-        &:nth-child(2) {
-            transition-delay: 200ms;
-        }
-        &:nth-child(4) {
-            transition-delay: 200ms;
-        }
-        &:nth-child(5) {
-            transition-delay: 400ms;
-        }
-
-        .domain-front {
-            max-width: 80px;
-            margin: 0.5rem auto;
-            svg {
-                transition-duration: 400ms;
-            }
-        }
-        .domain-back {
-            transition-duration: 300ms;
-            display: block;
-            font-size: 1.2rem;
-        }
-        .domain-secure {
-            transition-duration: 400ms;
-            position: absolute;
-            bottom: 46px;
-            right: 16px;
-            color: rgb(34 211 238);
-        }
-
-        &.default, &:hover {
-            .domain-back {
-                transform: translateY(40%) scale(1.6);
-            }
-            .domain-secure {
-                transform: translateX(50%) translateY(-25%) scale(1.6);
-                color: rgb(75 85 99);
-            }
-            .domain-front {
-                svg {
-                    color: rgb(34 211 238);
-                    transform: scale(1.2) translateY(-5%) rotateY(180deg);
-                }
-            }
-        }
-    }
-}
-
-.loaded .domain {
-    opacity: 1;
-    &:nth-child(1) {
-        transform: translateY(-50%);
-    }
-    &:nth-child(2) {
-        transform: translateY(-25%);
-    }
-    &:nth-child(4) {
-        transform: translateY(-25%);
-    }
-    &:nth-child(5) {
-        transform: translateY(-50%);
-    }
-}
-
-.chevron {
-    opacity: 0;
-    height: 50px;
-    transition-delay: 700ms;
-    transition-duration: 700ms;
-    svg {
-        transform: translateY(50%);
-        opacity: 0;
-        animation-name: chevron-animation;
-        animation-duration: 2000ms;
-        animation-delay: 700ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-}
-.loaded .chevron {
-    opacity: 1;
-}
-
-@keyframes chevron-animation {
-    50% { opacity: 1; transform: translateY(100%); }
-    100% { opacity: 0; transform: translateY(50%); }
-}

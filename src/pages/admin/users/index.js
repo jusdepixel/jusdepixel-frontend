@@ -1,4 +1,4 @@
-import AppLayout from '@/components/Layouts/AppLayout'
+import AdminLayout from '@/components/Layouts/AdminLayout'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
@@ -33,7 +33,7 @@ const Index = () => {
     })
 
     return (
-        <AppLayout
+        <AdminLayout
             header={
                 <h2 className="text-gray-600 leading-tight flex flex-row">
                     <span className="basis-2/3 flex">
@@ -112,7 +112,7 @@ const Index = () => {
                                                             <Link
                                                                 href={{
                                                                     pathname:
-                                                                        '/users/edit',
+                                                                        '/admin/users/edit',
                                                                     query: {
                                                                         id:
                                                                             user.id,
@@ -131,7 +131,7 @@ const Index = () => {
                                                             <Link
                                                                 href={{
                                                                     pathname:
-                                                                        '/users/delete',
+                                                                        '/admin/users/delete',
                                                                     query: {
                                                                         id:
                                                                             user.id,
@@ -163,7 +163,7 @@ const Index = () => {
             ) : (
                 <></>
             )}
-        </AppLayout>
+        </AdminLayout>
     )
 }
 

@@ -25,26 +25,24 @@ const Navigation = ({ user }) => {
                     <div className="flex">
                         {/* Logo */}
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/dashboard">
-                                <ApplicationLogo className="block h-14 w-auto fill-current text-gray-600" />
-                            </Link>
+                            <ApplicationLogo className="block h-14 w-auto fill-current text-gray-600" />
                         </div>
 
                         {/* Navigation Links */}
                         <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <NavLink
-                                href="/dashboard"
-                                active={router.pathname === '/dashboard'}>
+                                href="/admin"
+                                active={router.pathname === '/admin'}>
                                 Dashboard
                             </NavLink>
                             <NavLink
-                                href="/domains"
-                                active={router.pathname === '/domains'}>
+                                href="/admin/domains"
+                                active={router.pathname === '/admin/domains'}>
                                 Domains
                             </NavLink>
                             <NavLink
-                                href="/users"
-                                active={router.pathname === '/users'}>
+                                href="/admin/users"
+                                active={router.pathname === '/admin/users'}>
                                 Users
                             </NavLink>
                         </div>

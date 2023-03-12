@@ -96,7 +96,7 @@ export const useAuth = ({ middleware, redirectIfAuthenticated } = {}) => {
         }
 
         if (typeof window.location !== 'undefined') {
-            window.location.pathname = '/'
+            window.location.pathname = '/login'
         }
     }
 
