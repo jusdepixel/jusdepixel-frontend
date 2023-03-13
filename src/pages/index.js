@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
 import ApplicationLogo from '@/components/ApplicationLogo'
-import ThemeToggle from '@/components/ThemeToggle'
 import { useAuth } from '@/hooks/auth'
 
 export default function Home() {
