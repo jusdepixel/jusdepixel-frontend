@@ -23,6 +23,9 @@ body {
     top: 10px;
     color: rgb(75 85 99);
     cursor: pointer;
+    &:hover {
+        color: rgb(34 211 238) !important;
+    }
 }
 
 [type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'],
