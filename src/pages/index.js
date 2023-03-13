@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
 import ApplicationLogo from '@/components/ApplicationLogo'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function Home() {
     const [domains, setDomains] = useState([])
@@ -38,6 +39,7 @@ export default function Home() {
 
             <div
                 className={`relative flex flex-col items-top justify-center min-h-screen items-center ${loading}`}>
+                <ThemeToggle />
                 <ApplicationLogo className="block h-14 w-auto fill-current text-gray-600 index mt-5" />
 
                 {domains ? (

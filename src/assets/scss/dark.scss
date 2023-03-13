@@ -1,0 +1,31 @@
+.dark h2,
+.dark .text-gray-500,
+.dark .text-gray-600,
+.dark .text-gray-700,
+.dark .theme-toggle,
+.dark .choose-domain .choose-domain-text,
+.dark .chevron,
+.dark .domains .domain .domain-front svg,
+.dark .domains .domain .domain-back,
+.dark .jusdepixel,
+.dark .domains .domain.active .domain-secure,
+.dark .domains .domain:hover .domain-secure {
+    color: rgb(255, 255, 255);
+}
+
+.dark .background-bg {
+    background: radial-gradient(ellipse at top, rgb(67, 67, 67) 0%, rgb(0, 0, 0) 100%);
+}
+
+.dark .bg-white {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark {
+    [type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'],
+    [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'],
+    [multiple], textarea, select {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: rgb(229, 229, 229);
+    }
+}

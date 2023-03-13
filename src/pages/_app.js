@@ -1,6 +1,15 @@
+import App from 'next/app'
 import 'tailwindcss/tailwind.css'
 import '../assets/scss/global.scss'
 
-const App = ({ Component, pageProps }) => <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+    return <Component {...pageProps} />
+}
 
-export default App
+MyApp.getInitialProps = async appContext => {
+    const appProps = await App.getInitialProps(appContext)
+
+    return { ...appProps }
+}
+
+export default MyApp

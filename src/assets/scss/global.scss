@@ -17,4 +17,12 @@ body {
     font-weight: 400;
 }
 
+.theme-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgb(75 85 99);
+    cursor: pointer;
+}
 
+@import "dark";
