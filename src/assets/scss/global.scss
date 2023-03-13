@@ -25,4 +25,19 @@ body {
     cursor: pointer;
 }
 
+[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'],
+[type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'],
+[multiple], textarea, select {
+    box-shadow: none !important;
+    border-color: rgb(215, 215, 215);
+    background-color: transparent;
+    color: rgb(107 114 128);
+    &:focus {
+        border-color: rgb(34 211 238);
+    }
+}
+[type='checkbox'] {
+    box-shadow: none !important;
+}
+
 @import "dark";

@@ -101,7 +101,7 @@ const Login = () => {
                                 id="remember_me"
                                 type="checkbox"
                                 name="remember"
-                                className="border-gray-300 text-cyan-400 shadow-sm focus:border-cyan-300 focus:ring focus:ring-cyan-200 focus:ring-opacity-50"
+                                className="text-cyan-400 bg-transparent border-gray-300"
                                 onChange={event =>
                                     setShouldRemember(event.target.checked)
                                 }
