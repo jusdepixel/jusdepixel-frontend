@@ -48,7 +48,7 @@ $amount: 40;
     $colors: (
         $black,
         $white,
-        $cyan
+        $jusdepixel
     );
     @for $i from 1 through $amount {
         &:nth-child(#{$i}) {

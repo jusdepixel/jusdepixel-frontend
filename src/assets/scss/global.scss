@@ -21,6 +21,15 @@ body {
     font-weight: 400;
 }
 
+a:hover, a:active, a:focus {
+    color: $jusdepixel
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+    background: $jusdepixel;
+    color: $white;
+}
+
 .dark {
     h2,
     .text-gray-700 {
@@ -28,5 +37,11 @@ body {
     }
     .text-gray-500 {
         color: $white-link;
+    }
+    a {
+        color: $white;
+        &:hover, &:active, &:focus {
+            color: $jusdepixel
+        }
     }
 }

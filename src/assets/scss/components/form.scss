@@ -6,18 +6,22 @@
     background-color: transparent !important;
     color: $gray-text;
     &:focus {
-        border-color: $cyan;
+        border-color: $jusdepixel;
     }
 }
 [type='checkbox'] {
     box-shadow: none !important;
+    color: $jusdepixel;
 }
 
 .dark {
     [type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'],
     [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'],
     [multiple], textarea, select {
-        color: $white-text;
+        color: $white;
         border-color: $gray-border;
+        &:focus {
+            border-color: $jusdepixel;
+        }
     }
 }

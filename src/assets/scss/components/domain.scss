@@ -38,7 +38,7 @@
             position: absolute;
             bottom: 46px;
             right: 16px;
-            color: $cyan;
+            color: $jusdepixel;
         }
 
         &.default, &:hover {
@@ -51,7 +51,7 @@
             }
             .domain-front {
                 svg {
-                    color: $cyan !important;
+                    color: $jusdepixel !important;
                     transform: scale(1.2) translateY(-5%) rotateY(180deg);
                 }
             }

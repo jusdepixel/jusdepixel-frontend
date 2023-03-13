@@ -48,10 +48,7 @@ const Login = () => {
 
     return (
         <GuestLayout>
-            <AuthCard
-                logo={
-                    <ApplicationLogo className="fill-current text-gray-500 login" />
-                }>
+            <AuthCard logo={<ApplicationLogo className="login" />}>
                 <ThemeToggle />
                 <AuthSessionStatus className="mb-4" status={status} />
 
@@ -102,7 +99,6 @@ const Login = () => {
                                 id="remember_me"
                                 type="checkbox"
                                 name="remember"
-                                className="text-cyan-400 bg-transparent border-gray-300"
                                 onChange={event =>
                                     setShouldRemember(event.target.checked)
                                 }
@@ -117,7 +113,7 @@ const Login = () => {
                     <div className="flex items-center justify-end mt-4">
                         <Link
                             href="/forgot-password"
-                            className="underline text-sm text-gray-700 hover:text-cyan-400">
+                            className="underline text-sm">
                             Forgot your password?
                         </Link>
 
