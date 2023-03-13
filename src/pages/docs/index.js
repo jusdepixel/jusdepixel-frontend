@@ -2,6 +2,7 @@ import GuestLayout from '@/components/Layouts/GuestLayout'
 import Head from 'next/head'
 import ApplicationLogo from '@/components/ApplicationLogo'
 import Link from 'next/link'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const Index = () => {
     return (
@@ -11,6 +12,7 @@ const Index = () => {
             </Head>
 
             <div className="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
+                <ThemeToggle />
                 <div className="max-w-xl mx-auto sm:px-6 lg:px-8">
                     <ApplicationLogo className="login" />
                     <div className="p-6 text-center mt-5">

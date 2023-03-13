@@ -21,6 +21,10 @@ $amount: 40;
     background: radial-gradient(ellipse at top, rgb(221, 221, 221) 0%, rgb(255, 255, 255) 100%);
 }
 
+.dark .background-bg {
+    background: radial-gradient(ellipse at top, rgb(26, 26, 26) 0%, rgb(0, 0, 0) 100%);
+}
+
 .background {
     animation-name: background-animation;
     animation-iteration-count: initial;
@@ -42,9 +46,9 @@ $amount: 40;
     animation-iteration-count: infinite;
     opacity: 0;
     $colors: (
-        rgb(0 0 0),
-        rgb(255 255 255),
-        rgb(13 202 240)
+        $black,
+        $white,
+        $cyan
     );
     @for $i from 1 through $amount {
         &:nth-child(#{$i}) {

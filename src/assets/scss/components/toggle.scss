@@ -1,0 +1,14 @@
+.theme-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: $gray-text;
+    cursor: pointer;
+    &:hover {
+        color: $cyan !important;
+    }
+}
+
+.dark .theme-toggle {
+    color: $white;
+}

@@ -1,0 +1,85 @@
+.domains {
+    transform: translateY(-50%);
+    .domain {
+        position: relative;
+        width: 12vh;
+        transform: translateY(0);
+        opacity: 0;
+        transition-duration: 500ms;
+        transition-delay: 100ms;
+
+        &:nth-child(1) {
+            transition-delay: 400ms;
+        }
+        &:nth-child(2) {
+            transition-delay: 200ms;
+        }
+        &:nth-child(4) {
+            transition-delay: 200ms;
+        }
+        &:nth-child(5) {
+            transition-delay: 400ms;
+        }
+
+        .domain-front {
+            max-width: 80px;
+            margin: 0.5rem auto;
+            svg {
+                transition-duration: 400ms;
+            }
+        }
+        .domain-back {
+            transition-duration: 300ms;
+            display: block;
+            font-size: 1.2rem;
+        }
+        .domain-secure {
+            transition-duration: 400ms;
+            position: absolute;
+            bottom: 46px;
+            right: 16px;
+            color: $cyan;
+        }
+
+        &.default, &:hover {
+            .domain-back {
+                transform: translateY(40%) scale(1.6);
+            }
+            .domain-secure {
+                transform: translateX(50%) translateY(-25%) scale(1.6);
+                color: $gray-text;
+            }
+            .domain-front {
+                svg {
+                    color: $cyan !important;
+                    transform: scale(1.2) translateY(-5%) rotateY(180deg);
+                }
+            }
+        }
+    }
+}
+
+.loaded .domain {
+    opacity: 1;
+    &:nth-child(1) {
+        transform: translateY(-50%);
+    }
+    &:nth-child(2) {
+        transform: translateY(-25%);
+    }
+    &:nth-child(4) {
+        transform: translateY(-25%);
+    }
+    &:nth-child(5) {
+        transform: translateY(-50%);
+    }
+}
+
+.dark {
+    .domains .domain .domain-front svg,
+    .domains .domain .domain-back,
+    .domains .domain.active .domain-secure,
+    .domains .domain:hover .domain-secure {
+        color: $white;
+    }
+}

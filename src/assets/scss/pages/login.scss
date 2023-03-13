@@ -6,3 +6,9 @@
         margin-right: 1vh;
     }
 }
+
+.dark {
+    .bg-white {
+        background-color: $black-bg;
+    }
+}

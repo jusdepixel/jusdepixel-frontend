@@ -2,45 +2,31 @@
 @import "@fontsource/roboto-condensed/400.css";
 @import "@fontsource/roboto-condensed/700.css";
 
-@import "background";
-@import "logo";
-@import "index";
-@import "login";
-@import "me";
-@import "domain";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "variables";
+
+@import "components/background";
+@import "components/logo";
+@import "components/toggle";
+@import "components/form";
+
+@import "pages/domains";
+@import "pages/login";
+@import "pages/me";
 
 body {
     font-weight: 400;
 }
 
-.theme-toggle {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: rgb(75 85 99);
-    cursor: pointer;
-    &:hover {
-        color: rgb(34 211 238) !important;
+.dark {
+    h2,
+    .text-gray-700 {
+      color: $white-text;
+    }
+    .text-gray-500 {
+        color: $white-link;
     }
 }
-
-[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'],
-[type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'],
-[multiple], textarea, select {
-    box-shadow: none !important;
-    border-color: rgb(215, 215, 215);
-    background-color: transparent;
-    color: rgb(107 114 128);
-    &:focus {
-        border-color: rgb(34 211 238);
-    }
-}
-[type='checkbox'] {
-    box-shadow: none !important;
-}
-
-@import "dark";

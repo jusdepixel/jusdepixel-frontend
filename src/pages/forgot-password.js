@@ -8,6 +8,7 @@ import InputError from '@/components/InputError'
 import Label from '@/components/Label'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const ForgotPassword = () => {
     const { forgotPassword } = useAuth({ middleware: 'guest' })
@@ -24,11 +25,9 @@ const ForgotPassword = () => {
 
     return (
         <GuestLayout>
-            <AuthCard
-                logo={
-                    <ApplicationLogo className="fill-current text-gray-500 login" />
-                }>
-                <div className="mb-4 text-sm text-gray-600">
+            <ThemeToggle />
+            <AuthCard logo={<ApplicationLogo className="login" />}>
+                <div className="mb-4 text-sm text-gray-700">
                     Forgot your password? No problem. Just let us know your
                     email address and we will email you a password reset link
                     that will allow you to choose a new one.

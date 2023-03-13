@@ -1,0 +1,26 @@
+
+.me {
+    .jusdepixel {
+        font-size: 8vh;
+        line-height: 18vh;
+        &::first-letter {
+            font-size: 14vh;
+            margin-right: 1.5vh;
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: $gray-text;
+    }
+    h3 {
+        font-family: "Great Vibes", sans-serif;
+        color: $cyan;
+        font-size: 2.5rem;
+    }
+}
+
+.dark .me {
+    h2 {
+        color: $white-text;
+    }
+}

@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const Login = () => {
     const router = useRouter()
@@ -51,7 +52,7 @@ const Login = () => {
                 logo={
                     <ApplicationLogo className="fill-current text-gray-500 login" />
                 }>
-                {/* Session Status */}
+                <ThemeToggle />
                 <AuthSessionStatus className="mb-4" status={status} />
 
                 <form onSubmit={submitForm}>
@@ -107,7 +108,7 @@ const Login = () => {
                                 }
                             />
 
-                            <span className="ml-2 text-sm text-gray-600">
+                            <span className="ml-2 text-sm text-gray-700">
                                 Remember me
                             </span>
                         </label>
@@ -116,7 +117,7 @@ const Login = () => {
                     <div className="flex items-center justify-end mt-4">
                         <Link
                             href="/forgot-password"
-                            className="underline text-sm text-gray-600 hover:text-gray-900">
+                            className="underline text-sm text-gray-700 hover:text-cyan-400">
                             Forgot your password?
                         </Link>
 

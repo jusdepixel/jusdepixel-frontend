@@ -8,6 +8,7 @@ import Label from '@/components/Label'
 import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const Register = () => {
     const { register } = useAuth({
@@ -35,12 +36,8 @@ const Register = () => {
 
     return (
         <GuestLayout>
-            <AuthCard
-                logo={
-                    <Link href="/">
-                        <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
-                    </Link>
-                }>
+            <ThemeToggle />
+            <AuthCard logo={<ApplicationLogo className="login" />}>
                 <form onSubmit={submitForm}>
                     {/* Name */}
                     <div>
