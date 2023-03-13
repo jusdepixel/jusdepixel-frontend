@@ -95,7 +95,9 @@ export default function Home() {
                             {domains.map(domain => (
                                 <Link
                                     href={
-                                        domain.secure && user !== undefined
+                                        (domain.secure === 1 &&
+                                            user !== undefined) ||
+                                        domain.secure === 0
                                             ? domain.slug
                                             : '/login'
                                     }
