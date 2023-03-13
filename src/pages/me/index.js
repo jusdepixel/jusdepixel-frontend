@@ -2,6 +2,7 @@ import GuestLayout from '@/components/Layouts/GuestLayout'
 import Head from 'next/head'
 import ApplicationLogo from '@/components/ApplicationLogo'
 import ThemeToggle from '@/components/ThemeToggle'
+import Link from 'next/link'
 
 const Index = () => {
     return (
@@ -16,10 +17,22 @@ const Index = () => {
                 <h1>
                     <ApplicationLogo />
                 </h1>
-                <h2 className="mt-5">Freelance Web Developer</h2>
-                <h3 className="mt-5">Looking for new challenges !</h3>
+                <h2>Freelance Web Developer</h2>
+                <h3 className="mt-20">Looking for new challenges !</h3>
 
-                <div className="flex mt-10">
+                <div className="links-me flex mt-5">
+                    <Link href="/me/projects" className="m-5">
+                        Projects
+                    </Link>
+                    <Link href="/me/work-with-me" className="m-5">
+                        Work with me ?
+                    </Link>
+                    <Link href="/me/jobs" className="m-5">
+                        Jobs
+                    </Link>
+                </div>
+
+                <div className="flex absolute bottom-10">
                     <a
                         href="https://www.linkedin.com/in/mandy-blique-jusdepixel/"
                         target="_blank"

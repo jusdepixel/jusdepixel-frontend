@@ -30,14 +30,21 @@ button, [type='button'], [type='reset'], [type='submit'] {
     color: $white;
 }
 
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $gray-text;
+}
+
 .dark {
+    h1 {
+        color: $white;
+    }
     h2,
-    .text-gray-700 {
+    .text-gray-700, .text-gray-500 {
       color: $white-text;
     }
-    .text-gray-500 {
-        color: $white-link;
-    }
+
     a {
         color: $white;
         &:hover, &:active, &:focus {

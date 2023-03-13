@@ -2,10 +2,18 @@
 .me {
     .jusdepixel {
         font-size: 8vh;
-        line-height: 18vh;
+        line-height: 10vh;
         &::first-letter {
             font-size: 14vh;
             margin-right: 1.5vh;
+        }
+    }
+    .jusdepixel.page {
+        font-size: 4vh;
+        line-height: 14vh;
+        &::first-letter {
+            font-size: 7vh;
+            margin-right: 0.75vh;
         }
     }
     h2 {
