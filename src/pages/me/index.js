@@ -17,9 +17,6 @@ const Index = () => {
                     <ApplicationLogo />
                 </h1>
                 <h2 className="mt-5">Freelance Web Developer</h2>
-                <h4 className="mt-3">
-                    {`{ 15 years of experience make the difference }`}
-                </h4>
                 <h3 className="mt-5">Looking for new challenges !</h3>
 
                 <div className="flex mt-10">
