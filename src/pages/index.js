@@ -43,7 +43,6 @@ export default function Home() {
 
             <div
                 className={`relative flex flex-col items-top justify-center min-h-screen items-center ${loading}`}>
-                <ThemeToggle />
                 <ApplicationLogo className="block h-14 w-auto fill-current text-gray-600 index mt-5" />
 
                 {domains ? (
