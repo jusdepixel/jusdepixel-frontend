@@ -4,11 +4,15 @@ import { useEffect, useState } from 'react'
 import axios from '@/lib/axios'
 import ApplicationLogo from '@/components/ApplicationLogo'
 import ThemeToggle from '@/components/ThemeToggle'
+import { useAuth } from '@/hooks/auth'
 
 export default function Home() {
     const [domains, setDomains] = useState([])
     const [loading, setLoading] = useState('loading')
     const [isDefault, setDefault] = useState(true)
+    const { user } = useAuth({
+        middleware: 'guest',
+    })
 
     const loadApi = async () => {
         await axios
@@ -90,7 +94,11 @@ export default function Home() {
                             onMouseLeave={() => setDefault(true)}>
                             {domains.map(domain => (
                                 <Link
-                                    href={domain.slug}
+                                    href={
+                                        domain.secure && user !== undefined
+                                            ? domain.slug
+                                            : '/login'
+                                    }
                                     key={domain.id}
                                     className={`domain text-center ${
                                         domain.default && isDefault && 'default'
