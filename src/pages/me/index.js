@@ -2,7 +2,6 @@ import GuestLayout from '@/components/Layouts/GuestLayout'
 import Head from 'next/head'
 import ApplicationLogo from '@/components/ApplicationLogo'
 import ThemeToggle from '@/components/ThemeToggle'
-import Link from 'next/link'
 
 const Index = () => {
     return (
@@ -18,6 +17,9 @@ const Index = () => {
                     <ApplicationLogo />
                 </h1>
                 <h2 className="mt-5">Freelance Web Developer</h2>
+                <h4 className="mt-3">
+                    {`{ 15 years of experience make the difference }`}
+                </h4>
                 <h3 className="mt-5">Looking for new challenges !</h3>
 
                 <div className="flex mt-10">
