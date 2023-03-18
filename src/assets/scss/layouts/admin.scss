@@ -1,0 +1,21 @@
+.admin .nav-link {
+    border-bottom: 2px solid transparent;
+    color: $gray-logo;
+    &:hover {
+        border-color: $gray-border;
+    }
+    &.active, &:focus, &:active {
+        border-color: $jusdepixel;
+    }
+}
+.admin nav button, .admin nav [type='button'] {
+    background-color: transparent;
+}
+
+.admin .breadcrumb {
+    min-height: 52px;
+}
+
+.admin .icon-action {
+    font-size: 1.5rem;
+}

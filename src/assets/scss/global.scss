@@ -2,6 +2,8 @@
 @import "@fontsource/roboto-condensed/400.css";
 @import "@fontsource/roboto-condensed/700.css";
 
+@import "bootstrap-icons";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,11 +11,15 @@
 @import "variables";
 
 @import "components/background";
+@import "components/loading";
 @import "components/logo";
 @import "components/toggle";
 @import "components/form";
+@import "components/network";
 
-@import "pages/domains";
+@import "layouts/admin";
+
+@import "pages/index";
 @import "pages/login";
 @import "pages/me";
 

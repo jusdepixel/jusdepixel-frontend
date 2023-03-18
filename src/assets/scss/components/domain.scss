@@ -24,7 +24,10 @@
         .domain-front {
             max-width: 80px;
             margin: 0.5rem auto;
-            svg {
+            i {
+                display: block;
+                font-size: 5rem;
+                height: 100px;
                 transition-duration: 400ms;
             }
         }
@@ -36,8 +39,9 @@
         .domain-secure {
             transition-duration: 400ms;
             position: absolute;
-            bottom: 46px;
-            right: 16px;
+            font-size: 1.2rem;
+            top: 28px;
+            left: 10px;
             color: $jusdepixel;
         }
 
@@ -46,11 +50,11 @@
                 transform: translateY(40%) scale(1.6);
             }
             .domain-secure {
-                transform: translateX(50%) translateY(-25%) scale(1.6);
+                transform: translateX(-50%) translateY(-25%) scale(1.6);
                 color: $gray-text;
             }
             .domain-front {
-                svg {
+                i {
                     color: $jusdepixel !important;
                     transform: scale(1.2) translateY(-5%) rotateY(180deg);
                 }
@@ -76,7 +80,7 @@
 }
 
 .dark {
-    .domains .domain .domain-front svg,
+    .domains .domain .domain-front i,
     .domains .domain .domain-back,
     .domains .domain.active .domain-secure,
     .domains .domain:hover .domain-secure {

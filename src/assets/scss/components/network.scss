@@ -1,0 +1,13 @@
+.link-network {
+    color: $gray-text;
+    &:hover {
+        color: $jusdepixel;
+    }
+}
+
+.dark .link-network {
+    color: $white-text;
+    &:hover {
+        color: $jusdepixel;
+    }
+}

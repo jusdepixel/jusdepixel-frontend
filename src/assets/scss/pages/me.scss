@@ -25,22 +25,10 @@
         color: $jusdepixel;
         font-size: 2.5rem;
     }
-    .link-networks {
-        color: $gray-text;
-        &:hover {
-            color: $jusdepixel;
-        }
-    }
 }
 
 .dark .me {
     h2 {
         color: $white-text;
-    }
-    .link-networks {
-        color: $white-text;
-        &:hover {
-            color: $jusdepixel;
-        }
     }
 }

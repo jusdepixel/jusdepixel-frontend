@@ -1,0 +1,33 @@
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    margin-left: -40px;
+    &::before {
+        font-family: bootstrap-icons, serif !important;
+        color: $jusdepixel;
+        content: "\f116";
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        left: -3px;
+        animation-name: loading-icon-animation;
+        animation-duration: 800ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    &::after {
+        content: 'Loading...';
+    }
+}
+
+.dark .loading {
+    &::after {
+        color: $white-text;
+    }
+}
+
+@keyframes loading-icon-animation {
+    100% { transform: rotate(360deg) translate3d(0, 0, 1px); }
+}

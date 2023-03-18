@@ -4,9 +4,10 @@
     box-shadow: none !important;
     border-color: $white-border;
     background-color: transparent !important;
-    color: $gray-text;
-    &:focus {
-        border-color: $jusdepixel;
+        color: $gray-input;
+        font-weight: 700;
+        &:focus {
+            border-color: $jusdepixel;
     }
 }
 [type='checkbox'] {
