@@ -14,7 +14,7 @@ const changeTheme = () => {
     Cookies.set('theme', newTheme)
 }
 
-const ThemeToggle = () => {
+const ThemeToggler = () => {
     const [theme, setTheme] = useState('')
 
     const toggleTheme = () => {
@@ -55,4 +55,4 @@ const ThemeToggle = () => {
     )
 }
 
-export default ThemeToggle
+export default ThemeToggler
