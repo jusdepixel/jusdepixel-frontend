@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { useAuth } from '@/hooks/auth'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import ThemeToggle from '@/components/ThemeToggle'
+import ThemeToggler from '@/components/ThemeToggler'
 
 const Login = () => {
     const router = useRouter()
@@ -49,7 +49,7 @@ const Login = () => {
     return (
         <GuestLayout>
             <AuthCard logo={<ApplicationLogo className="login" />}>
-                <ThemeToggle />
+                <ThemeToggler />
                 <AuthSessionStatus className="mb-4" status={status} />
 
                 <form onSubmit={submitForm}>

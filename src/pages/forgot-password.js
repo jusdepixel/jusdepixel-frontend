@@ -8,7 +8,7 @@ import InputError from '@/components/InputError'
 import Label from '@/components/Label'
 import { useAuth } from '@/hooks/auth'
 import { useState } from 'react'
-import ThemeToggle from '@/components/ThemeToggle'
+import ThemeToggler from '@/components/ThemeToggler'
 
 const ForgotPassword = () => {
     const { forgotPassword } = useAuth({ middleware: 'guest' })
@@ -25,7 +25,7 @@ const ForgotPassword = () => {
 
     return (
         <GuestLayout>
-            <ThemeToggle />
+            <ThemeToggler />
             <AuthCard logo={<ApplicationLogo className="login" />}>
                 <div className="mb-4 text-sm text-gray-700">
                     Forgot your password? No problem. Just let us know your
