@@ -1,1 +1,1 @@
-export const Loading = () => <span className="loading"></span>
+export const Loading = () => <span className="loading" />
