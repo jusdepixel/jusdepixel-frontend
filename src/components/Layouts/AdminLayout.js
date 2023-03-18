@@ -1,26 +1,24 @@
 import Navigation from '@/components/Layouts/Navigation'
 import { useAuth } from '@/hooks/auth'
 
-const AppLayout = ({ header, children }) => {
+const AdminLayout = ({ header, module, children }) => {
     const { user } = useAuth({ middleware: 'auth' })
 
     return user === undefined ? (
         <></>
     ) : (
-        <div className="min-h-screen">
-            <Navigation user={user} />
+        <div className="min-h-screen admin">
+            <Navigation user={user} module={module} />
 
-            {/* Page Heading */}
             <header className="bg-white shadow">
-                <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                <div className="breadcrumb max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     {header}
                 </div>
             </header>
 
-            {/* Page Content */}
             <main>{children}</main>
         </div>
     )
 }
 
-export default AppLayout
+export default AdminLayout
