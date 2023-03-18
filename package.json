@@ -20,10 +20,9 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",
     "@fontsource/great-vibes": "^4.5.10",
-    "@fontsource/righteous": "^4.5.7",
     "@fontsource/roboto-condensed": "^4.5.9",
     "@next/eslint-plugin-next": "^10.0.4",
-    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
     "bootstrap-icons": "^1.10.3",
