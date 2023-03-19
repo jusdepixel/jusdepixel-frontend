@@ -29,7 +29,7 @@
         transition-duration: 150ms;
         color: $gray-text;
         &:hover {
-            color: inherit;
+            color: $gray-text;
             border-color: $gray-border;
         }
         &.active {
@@ -42,5 +42,16 @@
 .dark .me {
     h2 {
         color: $white-text;
+    }
+    .links-me a {
+        color: $white-text;
+        &:hover {
+            color: $white;
+            border-color: $white;
+        }
+        &.active {
+            border-color: $jusdepixel;
+            color: $jusdepixel;
+        }
     }
 }
