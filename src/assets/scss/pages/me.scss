@@ -7,7 +7,7 @@
             margin-right: 1.5vh;
         }
     }
-    .jusdepixel.page {
+    &.page .jusdepixel {
         font-size: 4vh;
         line-height: 14vh;
         &::first-letter {
@@ -16,8 +16,13 @@
         }
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.5vh;
         color: $gray-text;
+        margin-bottom: 2vh;
+        &.logo {
+            font-size: 2.4vh;
+            padding-left: 15vh;
+        }
     }
     h3 {
         font-family: "Great Vibes", sans-serif;

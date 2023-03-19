@@ -5,7 +5,7 @@ import Network from '@/components/Network'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const MeLayout = ({ children }) => {
+const MeLayout = ({ page = false, children }) => {
     const router = useRouter()
 
     return (
@@ -15,31 +15,50 @@ const MeLayout = ({ children }) => {
             </Head>
 
             <div
-                className={`flex flex-col justify-center min-h-screen items-center me`}>
+                className={`flex flex-col items-center me ${
+                    page ? 'page' : 'justify-center min-h-screen'
+                }`}>
                 <ThemeToggler />
                 <ApplicationLogo />
-                <h2>Freelance Web Developer</h2>
+                {!page && (
+                    <h2 className="logo">
+                        Freelance Web Application Developer
+                    </h2>
+                )}
 
                 {children}
 
                 <div className="links-me flex mt-10 space-x-5">
+                    {page && (
+                        <Link
+                            href="/me"
+                            className={
+                                router.pathname === '/me' ? 'active' : ''
+                            }>
+                            Home
+                        </Link>
+                    )}
                     <Link
                         href="/me/projects"
                         className={
-                            router.pathname === '/me/projects' && 'active'
+                            router.pathname === '/me/projects' ? 'active' : ''
                         }>
                         Projects
                     </Link>
                     <Link
                         href="/me/work-with-me"
                         className={
-                            router.pathname === '/me/work-with-me' && 'active'
+                            router.pathname === '/me/work-with-me'
+                                ? 'active'
+                                : ''
                         }>
                         Work with me ?
                     </Link>
                     <Link
                         href="/me/jobs"
-                        className={router.pathname === '/me/jobs' && 'active'}>
+                        className={
+                            router.pathname === '/me/jobs' ? 'active' : ''
+                        }>
                         Jobs
                     </Link>
                 </div>
