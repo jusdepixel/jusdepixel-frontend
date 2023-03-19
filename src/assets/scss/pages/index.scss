@@ -44,17 +44,17 @@
         background-color: $white;
         height: 2vh;
         border-radius: 50%;
+        transition-duration: 150ms;
+        transition-timing-function: ease-in-out;
         i {
             position: relative;
             top: -2vh;
             font-size: 4vh;
             height: 3vh;
         }
-        &:hover {
-            color: $gray-text;
-        }
     }
     #video-pause {
+        color: $gray-text;
         display: none;
     }
 

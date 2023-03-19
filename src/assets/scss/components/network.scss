@@ -1,5 +1,8 @@
 .link-network {
     color: $gray-text;
+    font-size: 1.6rem;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
     &:hover {
         color: $jusdepixel;
     }
