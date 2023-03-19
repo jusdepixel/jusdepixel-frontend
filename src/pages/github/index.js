@@ -22,7 +22,7 @@ const Index = () => {
                     <Link
                         href="/"
                         className="px-4 font-light text-lg text-gray-500 block text-center mt-5">
-                        Back to the homepage
+                        Back to index
                     </Link>
                 </div>
             </div>
