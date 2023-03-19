@@ -24,6 +24,19 @@
         color: $jusdepixel;
         font-size: 2.5rem;
     }
+    .links-me a {
+        border-bottom: 1px solid transparent;
+        transition-duration: 150ms;
+        color: $gray-text;
+        &:hover {
+            color: inherit;
+            border-color: $gray-border;
+        }
+        &.active {
+            border-color: $jusdepixel;
+            color: $jusdepixel;
+        }
+    }
 }
 
 .dark .me {
