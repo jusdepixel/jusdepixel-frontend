@@ -51,15 +51,52 @@ export default function Home() {
                     <div>
                         <div className="choose-domain flex flex-col items-center">
                             <div className="video-domain">
-                                <video
-                                    onClick={e => {
-                                        e.target.play()
-                                    }}>
+                                <video id="video">
                                     <source
                                         src="https://static.jusdepixel.fr/mandy/mandy.mp4"
                                         type="video/mp4"
                                     />
                                 </video>
+                            </div>
+                            <div
+                                id="video-play"
+                                onClick={() => {
+                                    document.getElementById(
+                                        'video-play',
+                                    ).style.display = 'none'
+                                    document.getElementById(
+                                        'video-pause',
+                                    ).style.display = 'block'
+                                    document
+                                        .getElementById('video')
+                                        .addEventListener(
+                                            'ended',
+                                            () => {
+                                                document.getElementById(
+                                                    'video-pause',
+                                                ).style.display = 'none'
+                                                document.getElementById(
+                                                    'video-play',
+                                                ).style.display = 'block'
+                                            },
+                                            false,
+                                        )
+                                    document.getElementById('video').play()
+                                }}>
+                                <i className="bi bi-play-circle-fill" />
+                            </div>
+                            <div
+                                id="video-pause"
+                                onClick={() => {
+                                    document.getElementById(
+                                        'video-pause',
+                                    ).style.display = 'none'
+                                    document.getElementById(
+                                        'video-play',
+                                    ).style.display = 'block'
+                                    document.getElementById('video').pause()
+                                }}>
+                                <i className="bi bi-pause-circle-fill" />
                             </div>
                             <div className="choose-domain-text text-lg text-gray-500">
                                 Choose your domain

@@ -16,9 +16,9 @@
 }
 
 .choose-domain {
+    position: relative;
     opacity: 0;
-    margin-top: -28px;
-    margin-bottom: 60px;
+    margin-top: -2vh;
     .choose-domain-text {
         margin-top: 20px;
     }
@@ -26,31 +26,49 @@
         position: relative;
         border-radius: 50%;
         background-color: white;
-        width: 162px;
-        height: 143px;
+        width: 12vh;
+        height: 12vh;
         overflow: hidden;
-        cursor: pointer;
         video {
             position: absolute;
-            height: 286px;
-            left: -12px;
-            top: -52px;
+            left: -1vh;
             opacity: 0.8;
         }
+    }
+    #video-play, #video-pause {
+        position: absolute;
+        left: 23.6vh;
+        top: 9.8vh;
+        color: $jusdepixel;
+        cursor: pointer;
+        background-color: $white;
+        height: 2vh;
+        border-radius: 50%;
         i {
-            width: 26px;
-            height: 26px;
-            position: absolute;
-            left: 32px;
-            bottom: 7px;
-            color: $jusdepixel;
-            background: white;
-            border-radius: 50px;
+            position: relative;
+            top: -2vh;
+            font-size: 4vh;
+            height: 3vh;
         }
         &:hover {
-            i {
-                color: $gray-text;
-            }
+            color: $gray-text;
+        }
+    }
+    #video-pause {
+        display: none;
+    }
+
+    .chevron {
+        height: 40px;
+        transition-delay: 700ms;
+        transition-duration: 700ms;
+        i {
+            display: block;
+            animation-name: chevron-animation;
+            animation-duration: 2000ms;
+            animation-delay: 700ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
 }
@@ -58,27 +76,8 @@
     opacity: 1;
 }
 
-.chevron {
-    opacity: 0;
-    height: 40px;
-    transition-delay: 700ms;
-    transition-duration: 700ms;
-    i {
-        display: block;
-        opacity: 0;
-        animation-name: chevron-animation;
-        animation-duration: 2000ms;
-        animation-delay: 700ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-}
-.loaded .chevron {
-    opacity: 1;
-}
-
 @keyframes chevron-animation {
-    50% { opacity: 1; transform: translateY(60%); }
+    50% { opacity: 0.5; transform: translateY(50%); }
     100% { opacity: 0; transform: translateY(0%); }
 }
 

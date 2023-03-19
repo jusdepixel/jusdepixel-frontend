@@ -1,24 +1,20 @@
 .domains {
-    transform: translateY(-50%);
+    opacity: 0;
     .domain {
         position: relative;
         width: 12vh;
-        transform: translateY(0);
-        opacity: 0;
-        transition-duration: 500ms;
-        transition-delay: 100ms;
 
         &:nth-child(1) {
-            transition-delay: 400ms;
+            transform: translateY(-50%);
         }
         &:nth-child(2) {
-            transition-delay: 200ms;
+            transform: translateY(-25%);
         }
         &:nth-child(4) {
-            transition-delay: 200ms;
+            transform: translateY(-25%);
         }
         &:nth-child(5) {
-            transition-delay: 400ms;
+            transform: translateY(-50%);
         }
 
         .domain-front {
@@ -26,20 +22,20 @@
             margin: 0.5rem auto;
             i {
                 display: block;
-                font-size: 5rem;
-                height: 100px;
+                font-size: 8vh;
+                height: 11vh;
                 transition-duration: 400ms;
             }
         }
         .domain-back {
             transition-duration: 300ms;
             display: block;
-            font-size: 1.2rem;
+            font-size: 1.8vh;
         }
         .domain-secure {
             transition-duration: 400ms;
             position: absolute;
-            font-size: 1.2rem;
+            font-size: 1.8vh;
             top: 28px;
             left: 10px;
             color: $jusdepixel;
@@ -63,20 +59,8 @@
     }
 }
 
-.loaded .domain {
+.loaded .domains {
     opacity: 1;
-    &:nth-child(1) {
-        transform: translateY(-50%);
-    }
-    &:nth-child(2) {
-        transform: translateY(-25%);
-    }
-    &:nth-child(4) {
-        transform: translateY(-25%);
-    }
-    &:nth-child(5) {
-        transform: translateY(-50%);
-    }
 }
 
 .dark {
