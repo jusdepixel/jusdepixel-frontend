@@ -6,6 +6,7 @@
     }
     &.active, &:focus, &:active {
         border-color: $jusdepixel;
+        outline: none;
     }
 }
 .admin nav button, .admin nav [type='button'] {
