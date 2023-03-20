@@ -1,0 +1,41 @@
+.lg-outer {
+    .lg-thumb-item {
+        border-color: transparent !important;
+        border-radius: 0 !important;
+    }
+    .lg-thumb-item.active, .lg-thumb-item:hover {
+        border-color: $jusdepixel !important;
+    }
+}
+
+.projects {
+    .project {
+        cursor: pointer;
+        .caption {
+            color: $gray-text;
+            transition-duration: 200ms;
+        }
+        .image {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            filter: grayscale(1);
+            transition-duration: 200ms;
+        }
+        &:hover {
+            .caption {
+                transform: scale(0);
+            }
+            .image {
+                filter: grayscale(0);
+                transform: scale(1.3) translateY(6%);
+            }
+        }
+    }
+}
+
+.dark .project {
+    .caption {
+        color: $white-text;
+    }
+}

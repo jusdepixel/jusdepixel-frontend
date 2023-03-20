@@ -3,8 +3,7 @@ import MeLayout from '@/components/Layouts/MeLayout'
 const Jobs = () => {
     return (
         <MeLayout page={true}>
-            <h1 className="mt-5">Jobs</h1>
-            <h3>Under construction, come back later...</h3>
+            <h2 className="mt-10">Under construction, come back later...</h2>
         </MeLayout>
     )
 }

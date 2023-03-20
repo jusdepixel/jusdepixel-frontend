@@ -21,14 +21,15 @@ const MeLayout = ({ page = false, children }) => {
                 <ThemeToggler />
                 <ApplicationLogo />
                 {!page && (
-                    <h2 className="logo">
-                        Freelance Web Application Developer
-                    </h2>
+                    <>
+                        <h2 className="logo">
+                            Freelance Web Application Developer
+                        </h2>
+                        {children}
+                    </>
                 )}
 
-                {children}
-
-                <div className="links-me flex mt-10 space-x-5">
+                <div className={`links-me flex space-x-5 ${!page && 'mt-5'}`}>
                     {page && (
                         <Link
                             href="/me"
@@ -46,6 +47,13 @@ const MeLayout = ({ page = false, children }) => {
                         Projects
                     </Link>
                     <Link
+                        href="/me/jobs"
+                        className={
+                            router.pathname === '/me/jobs' ? 'active' : ''
+                        }>
+                        Jobs
+                    </Link>
+                    <Link
                         href="/me/work-with-me"
                         className={
                             router.pathname === '/me/work-with-me'
@@ -54,31 +62,28 @@ const MeLayout = ({ page = false, children }) => {
                         }>
                         Work with me ?
                     </Link>
-                    <Link
-                        href="/me/jobs"
-                        className={
-                            router.pathname === '/me/jobs' ? 'active' : ''
-                        }>
-                        Jobs
-                    </Link>
                 </div>
 
-                <div className="flex absolute bottom-10">
-                    <Network
-                        network="linkedin"
-                        link="https://www.linkedin.com/in/mandy-blique-jusdepixel/"
-                    />
-                    <Network
-                        network="github"
-                        link="https://github.com/jusdepixel"
-                    />
-                    <Network
-                        network="instagram"
-                        link="https://www.instagram.com/jusdepixel/"
-                    />
-                    <Network network="discord" link="#" />
-                    <Network network="google" link="#" />
-                </div>
+                {page && children}
+
+                {!page && (
+                    <div className="flex absolute bottom-10">
+                        <Network
+                            network="linkedin"
+                            link="https://www.linkedin.com/in/mandy-blique-jusdepixel/"
+                        />
+                        <Network
+                            network="github"
+                            link="https://github.com/jusdepixel"
+                        />
+                        <Network
+                            network="instagram"
+                            link="https://www.instagram.com/jusdepixel/"
+                        />
+                        <Network network="discord" link="#" />
+                        <Network network="google" link="#" />
+                    </div>
+                )}
             </div>
         </div>
     )
