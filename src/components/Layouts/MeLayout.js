@@ -5,7 +5,7 @@ import Network from '@/components/Network'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const MeLayout = ({ page = false, children }) => {
+const MeLayout = ({ page = false, loaded = true, children }) => {
     const router = useRouter()
 
     return (
@@ -20,16 +20,13 @@ const MeLayout = ({ page = false, children }) => {
                 }`}>
                 <ThemeToggler />
                 <ApplicationLogo />
-                {!page && (
-                    <>
-                        <h2 className="logo">
-                            Freelance Web Application Developer
-                        </h2>
-                        {children}
-                    </>
-                )}
+                <h2 className={`logo ${page && 'in-page'}`}>
+                    Freelance Web Application Developer
+                </h2>
 
-                <div className={`links-me flex space-x-5 ${!page && 'mt-5'}`}>
+                {!page && <>{children}</>}
+
+                <div className={`links-me flex space-x-5 mt-5`}>
                     {page && (
                         <Link
                             href="/me"
@@ -66,8 +63,11 @@ const MeLayout = ({ page = false, children }) => {
 
                 {page && children}
 
-                {!page && (
-                    <div className="flex absolute bottom-10">
+                {loaded && (
+                    <div
+                        className={`flex ${
+                            !page ? 'absolute bottom-10' : 'mb-10'
+                        }`}>
                         <Network
                             network="linkedin"
                             link="https://www.linkedin.com/in/mandy-blique-jusdepixel/"

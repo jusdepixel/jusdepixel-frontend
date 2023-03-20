@@ -17,7 +17,7 @@ const Projects = () => {
     }, [loading, datas])
 
     return (
-        <MeLayout page={true}>
+        <MeLayout page={true} loaded={!loading}>
             {loading && <Loading />}
             {!loading && (
                 <div className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6 gap-4 m-10 ">
