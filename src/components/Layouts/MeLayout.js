@@ -24,21 +24,11 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                     Freelance Web Application Developer
                 </h2>
 
-                {!page && <>{children}</>}
-
                 <div className={`links-me flex space-x-5 mt-5`}>
-                    <Link href="/">Index</Link>
                     <Link
                         href="/me"
                         className={router.pathname === '/me' ? 'active' : ''}>
                         Home
-                    </Link>
-                    <Link
-                        href="/me/projects"
-                        className={
-                            router.pathname === '/me/projects' ? 'active' : ''
-                        }>
-                        Projects
                     </Link>
                     <Link
                         href="/me/jobs"
@@ -46,6 +36,13 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                             router.pathname === '/me/jobs' ? 'active' : ''
                         }>
                         Jobs
+                    </Link>
+                    <Link
+                        href="/me/projects"
+                        className={
+                            router.pathname === '/me/projects' ? 'active' : ''
+                        }>
+                        Projects
                     </Link>
                     <Link
                         href="/me/work-with-me"
@@ -58,7 +55,7 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                     </Link>
                 </div>
 
-                {page && children}
+                {children}
 
                 {loaded && (
                     <div
