@@ -27,15 +27,12 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                 {!page && <>{children}</>}
 
                 <div className={`links-me flex space-x-5 mt-5`}>
-                    {page && (
-                        <Link
-                            href="/me"
-                            className={
-                                router.pathname === '/me' ? 'active' : ''
-                            }>
-                            Home
-                        </Link>
-                    )}
+                    <Link href="/">Index</Link>
+                    <Link
+                        href="/me"
+                        className={router.pathname === '/me' ? 'active' : ''}>
+                        Home
+                    </Link>
                     <Link
                         href="/me/projects"
                         className={

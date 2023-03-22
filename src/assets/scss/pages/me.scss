@@ -8,11 +8,11 @@
         }
     }
     &.page .jusdepixel {
-        font-size: 4vh;
-        line-height: 14vh;
+        font-size: 6vh;
+        line-height: 18vh;
         &::first-letter {
-            font-size: 7vh;
-            margin-right: 0.75vh;
+            font-size: 10vh;
+            margin-right: 1vh;
         }
     }
     h2 {
@@ -23,9 +23,9 @@
             font-size: 2.6vh;
             padding-left: 14vh;
             &.in-page {
-                font-size: 1.3vh;
-                padding-left: 7vh;
-                margin-top: -5vh;
+                font-size: 1.9vh;
+                padding-left: 11vh;
+                margin-top: -6vh;
             }
         }
     }
@@ -37,14 +37,19 @@
     .links-me a {
         border-bottom: 1px solid transparent;
         transition-duration: 150ms;
-        color: $gray-text;
+        color: $gray-link;
+        font-size: 1.2rem;
+        font-weight: 300;
         &:hover {
-            color: $gray-text;
+            color: $gray-link;
             border-color: $gray-border;
         }
         &.active {
-            border-color: $jusdepixel;
-            color: $jusdepixel;
+            color: $gray-logo;
+            font-weight: 700;
+            &:hover {
+                border-color: transparent;
+            }
         }
     }
 }
@@ -62,8 +67,10 @@
             border-color: $white;
         }
         &.active {
-            border-color: $jusdepixel;
-            color: $jusdepixel;
+            color: $white;
+            &:hover {
+                border-color: transparent;
+            }
         }
     }
 }
