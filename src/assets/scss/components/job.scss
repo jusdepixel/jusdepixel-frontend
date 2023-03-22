@@ -1,0 +1,46 @@
+.me .job {
+    .icon {
+        font-size: 2rem;
+        color: $jusdepixel;
+    }
+    h3 {
+        font-size: 1.4rem;
+        font-family: "Roboto Condensed", sans-serif;
+        color: $gray-logo;
+    }
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $gray-text;
+    }
+    h5 {
+        font-size: 0.9rem;
+        color: $gray-text;
+        text-shadow: 0 0 1px $white;
+    }
+    h6 {
+        font-size: 0.9rem;
+        color: $gray-text;
+        background-color: $gray-bg;
+    }
+    p {
+        font-size: 1rem;
+        color: $gray-text;
+    }
+}
+
+.dark .me .job {
+    h3 {
+        color: $white-text;
+    }
+    h5, h4 {
+        color: $white-title;
+    }
+    p {
+        color: $white-link;
+    }
+    h6 {
+        color: $white-title;
+        background-color: $black-bg-20;
+    }
+}
