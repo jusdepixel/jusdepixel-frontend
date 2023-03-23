@@ -72,8 +72,16 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                             network="instagram"
                             link="https://www.instagram.com/jusdepixel/"
                         />
-                        <Network network="discord" link="#" />
-                        <Network network="google" link="#" />
+                        <Network network="discord" link="Jusdepixel#9348" />
+                        <Network
+                            network="google"
+                            link="mailto:mandy.blique@gmail.com"
+                        />
+                        <Network
+                            network="envelope-fill"
+                            link="mailto:mandy@jusdepixel.fr"
+                        />
+                        <Network network="phone-fill" link="tel:0609426041" />
                     </div>
                 )}
             </div>

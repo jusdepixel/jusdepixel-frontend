@@ -61,6 +61,18 @@
             overflow: hidden;
         }
     }
+
+    .malt {
+        .banner-logo {
+            width: 150px;
+            height: 52px;
+            color: black;
+            transition-duration: 150ms;
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
 }
 
 .dark .me {
