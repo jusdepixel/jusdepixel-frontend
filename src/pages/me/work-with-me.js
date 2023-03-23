@@ -40,7 +40,10 @@ const WorkWithMe = () => {
                             network="instagram"
                             link="https://www.instagram.com/jusdepixel/"
                         />
-                        <Network network="discord" link="Jusdepixel#9348" />
+                        <Network
+                            network="discord"
+                            link="https://discord.gg/8SEk8zykE6"
+                        />
                         <Network
                             network="google"
                             link="mailto:mandy.blique@gmail.com"
