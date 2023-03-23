@@ -1,13 +1,5 @@
 .me {
     .jusdepixel {
-        font-size: 8vh;
-        line-height: 10vh;
-        &::first-letter {
-            font-size: 14vh;
-            margin-right: 1.5vh;
-        }
-    }
-    &.page .jusdepixel {
         font-size: 6vh;
         line-height: 18vh;
         &::first-letter {
@@ -20,13 +12,9 @@
         color: $gray-logo;
         margin-bottom: 2vh;
         &.logo {
-            font-size: 2.6vh;
-            padding-left: 14vh;
-            &.in-page {
-                font-size: 1.9vh;
-                padding-left: 11vh;
-                margin-top: -6vh;
-            }
+            font-size: 1.9vh;
+            padding-left: 11vh;
+            margin-top: -6vh;
         }
     }
     .links-me a {
@@ -52,6 +40,9 @@
     &.index {
         h2 {
             font-size: 1.4rem;
+            &.logo {
+                font-size: 1.9vh;
+            }
         }
         h3 {
             font-size: 1.6rem;
@@ -63,8 +54,11 @@
             color: $jusdepixel;
             font-size: 2.4rem;
         }
-        img {
+        .picture {
+            height: 174px;
+            width: 160px;
             border-radius: 50%;
+            overflow: hidden;
         }
     }
 }

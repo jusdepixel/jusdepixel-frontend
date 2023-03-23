@@ -16,13 +16,11 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
 
             <div
                 className={`flex flex-col items-center me ${
-                    page ? 'page' : 'justify-center min-h-screen index'
+                    page ? 'page' : 'index'
                 }`}>
                 <ThemeToggler />
                 <ApplicationLogo />
-                <h2 className={`logo ${page && 'in-page'}`}>
-                    Freelance Web Application Developer
-                </h2>
+                <h2 className={`logo`}>Freelance Web Application Developer</h2>
 
                 <div className={`links-me flex space-x-5 mt-5`}>
                     <Link
