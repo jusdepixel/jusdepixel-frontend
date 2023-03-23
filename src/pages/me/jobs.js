@@ -22,7 +22,12 @@ const Jobs = () => {
                         <div
                             key={idx}
                             className="job w-full sm:max-w-md px-10 py-6 pb-14 bg-white shadow-md relative">
-                            <div className={`icon absolute ${data.css}`}>
+                            <div
+                                className={`icon absolute ${
+                                    data.icon === 'bi-paperclip'
+                                        ? '-top-4 right-0'
+                                        : 'top-0 right-4'
+                                }`}>
                                 <i className={`bi ${data.icon}`} />
                             </div>
                             <h3 className="mb-2">{data.job}</h3>
