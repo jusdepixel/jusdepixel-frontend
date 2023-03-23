@@ -16,7 +16,7 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
 
             <div
                 className={`flex flex-col items-center me ${
-                    page ? 'page' : 'justify-center min-h-screen'
+                    page ? 'page' : 'justify-center min-h-screen index'
                 }`}>
                 <ThemeToggler />
                 <ApplicationLogo />
@@ -28,7 +28,7 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                     <Link
                         href="/me"
                         className={router.pathname === '/me' ? 'active' : ''}>
-                        Home
+                        Me !
                     </Link>
                     <Link
                         href="/me/jobs"

@@ -29,11 +29,6 @@
             }
         }
     }
-    h3 {
-        font-family: "Great Vibes", sans-serif;
-        color: $jusdepixel;
-        font-size: 3.5rem;
-    }
     .links-me a {
         border-bottom: 1px solid transparent;
         transition-duration: 150ms;
@@ -51,6 +46,25 @@
             &:hover {
                 border-color: transparent;
             }
+        }
+    }
+
+    &.index {
+        h2 {
+            font-size: 1.4rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            color: $gray-text;
+            font-weight: 300;
+        }
+        h4 {
+            font-family: "Great Vibes", sans-serif;
+            color: $jusdepixel;
+            font-size: 2.4rem;
+        }
+        img {
+            border-radius: 50%;
         }
     }
 }
