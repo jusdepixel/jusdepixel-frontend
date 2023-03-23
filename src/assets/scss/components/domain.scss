@@ -24,6 +24,7 @@
                 display: block;
                 font-size: 8vh;
                 height: 11vh;
+                color: $gray-logo;
                 transition-duration: 400ms;
             }
         }
@@ -47,7 +48,7 @@
             }
             .domain-secure {
                 transform: translateX(-50%) translateY(-25%) scale(1.6);
-                color: $gray-text;
+                color: $gray-logo;
             }
             .domain-front {
                 i {
