@@ -42,7 +42,7 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                         className={
                             router.pathname === '/me/projects' ? 'active' : ''
                         }>
-                        Projects
+                        Some projects
                     </Link>
                     <Link
                         href="/me/work-with-me"
