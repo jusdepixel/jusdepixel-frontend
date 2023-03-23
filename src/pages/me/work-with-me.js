@@ -1,6 +1,7 @@
 import MeLayout from '@/components/Layouts/MeLayout'
 import PreloadImage from 'react-preload-image'
 import Link from 'next/link'
+import Network from '@/components/Network'
 
 const WorkWithMe = () => {
     return (
@@ -17,7 +18,7 @@ const WorkWithMe = () => {
                         target="_blank">
                         <PreloadImage
                             src="https://static.jusdepixel.fr/malt/logo.svg"
-                            className="banner-logo relative"
+                            className="banner-logo relative mx-auto"
                             alt="Propose a project on malt"
                         />
                     </Link>
@@ -26,6 +27,30 @@ const WorkWithMe = () => {
                         <br />
                         <i className="bi bi-chevron-down" />
                     </h2>
+                    <div className={`flex mb-10`}>
+                        <Network
+                            network="linkedin"
+                            link="https://www.linkedin.com/in/mandy-blique-jusdepixel/"
+                        />
+                        <Network
+                            network="github"
+                            link="https://github.com/jusdepixel"
+                        />
+                        <Network
+                            network="instagram"
+                            link="https://www.instagram.com/jusdepixel/"
+                        />
+                        <Network network="discord" link="Jusdepixel#9348" />
+                        <Network
+                            network="google"
+                            link="mailto:mandy.blique@gmail.com"
+                        />
+                        <Network
+                            network="envelope-fill"
+                            link="mailto:mandy@jusdepixel.fr"
+                        />
+                        <Network network="phone-fill" link="tel:0609426041" />
+                    </div>
                 </div>
             </div>
         </MeLayout>

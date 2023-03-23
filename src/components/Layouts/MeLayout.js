@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import ThemeToggler from '@/components/ThemeToggler'
 import ApplicationLogo from '@/components/ApplicationLogo'
-import Network from '@/components/Network'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const MeLayout = ({ page = false, loaded = true, children }) => {
+const MeLayout = ({ page = false, children }) => {
     const router = useRouter()
 
     return (
@@ -54,36 +53,6 @@ const MeLayout = ({ page = false, loaded = true, children }) => {
                 </div>
 
                 {children}
-
-                {loaded && (
-                    <div
-                        className={`flex ${
-                            !page ? 'absolute bottom-10' : 'mb-10'
-                        }`}>
-                        <Network
-                            network="linkedin"
-                            link="https://www.linkedin.com/in/mandy-blique-jusdepixel/"
-                        />
-                        <Network
-                            network="github"
-                            link="https://github.com/jusdepixel"
-                        />
-                        <Network
-                            network="instagram"
-                            link="https://www.instagram.com/jusdepixel/"
-                        />
-                        <Network network="discord" link="Jusdepixel#9348" />
-                        <Network
-                            network="google"
-                            link="mailto:mandy.blique@gmail.com"
-                        />
-                        <Network
-                            network="envelope-fill"
-                            link="mailto:mandy@jusdepixel.fr"
-                        />
-                        <Network network="phone-fill" link="tel:0609426041" />
-                    </div>
-                )}
             </div>
         </div>
     )
