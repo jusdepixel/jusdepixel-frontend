@@ -42,7 +42,7 @@ const WorkWithMe = () => {
                         />
                         <Network
                             network="discord"
-                            link="https://discord.gg/8SEk8zykE6"
+                            link="https://discord.gg/vKDS4ype5m"
                         />
                         <Network
                             network="google"
