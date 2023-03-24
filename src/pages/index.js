@@ -53,7 +53,7 @@ export default function Home() {
                             <div className="video-domain">
                                 <video id="video">
                                     <source
-                                        src="https://static.jusdepixel.fr/mandy/mandy.mp4"
+                                        src="https://static.jusdepixel.fr/mandy/mandy-2.mp4"
                                         type="video/mp4"
                                     />
                                 </video>
