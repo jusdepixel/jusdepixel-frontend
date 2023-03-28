@@ -1,0 +1,126 @@
+.docs {
+    .jusdepixel {
+        font-size: 6vh;
+        line-height: 18vh;
+
+        &::first-letter {
+            font-size: 10vh;
+            margin-right: 1vh;
+        }
+    }
+    h2 {
+        font-size: 2.5vh;
+        font-weight: 300;
+        color: $gray-logo;
+        margin-bottom: 2vh;
+        &.logo {
+            font-size: 1.9vh;
+            margin-left: 15.5vh;
+            margin-top: -6vh;
+        }
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+
+    .badge {
+        &.badge-get {
+            background-color: dodgerblue;
+        }
+        &.badge-post {
+            background-color: green;
+        }
+        &.badge-delete {
+            background-color: firebrick;
+        }
+        &.badge-patch {
+            background-color: orange;
+        }
+    }
+
+    .navbar {
+        max-width: 260px;
+        h6 {
+            font-size: 0.9rem;
+            a {
+                text-decoration: none;
+                color: $gray-text;
+            }
+        }
+        .navbar-nav {
+            width: 100%;
+            padding-left: 0.9rem;
+            border-left: 1px solid $gray-border;
+            .nav-item {
+                &:first-child {
+                    margin-top: 0 !important;
+                }
+                &:last-child {
+                    padding-bottom: 0.9rem;
+                }
+                h6 {
+                    margin-bottom: 0.3rem;
+                    span {
+                        color: $gray-text;
+                    }
+                }
+                a {
+                    font-size: 0.9rem;
+                    color: $gray-link;
+                    text-decoration: none;
+                    span {
+                        color: $gray-text;
+                    }
+                    small {
+                        font-size: 0.7rem;
+                        font-weight: 700;
+                        display: inline-block;
+                        text-align: center;
+                        width: 44px;
+                        padding: 2px 0 1px;
+                        margin-right: 4px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    code {
+        font-family: inherit;
+        display: block;
+        background-color: $gray-bg;
+        color: $gray-text;
+        border: 1px solid $gray-border;
+        padding: 10px;
+        margin: 15px 0;
+        border-left: 5px solid $gray-border;
+    }
+}
+
+.dark .docs {
+    color: $white-text;
+    .navbar {
+        h6 a,
+        h6 span {
+            color: $white-text;
+        }
+        .navbar-nav {
+            .nav-item {
+                h6,
+                h6 span,
+                a,
+                a span {
+                    color: $white-text;
+                }
+            }
+        }
+    }
+    code {
+        background-color: $black-bg;
+        color: $white-text;
+    }
+}
