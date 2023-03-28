@@ -1,0 +1,17 @@
+.badge {
+    color: $white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    &.progress {
+        background-color: orange;
+        &::after {
+            content: 'In progress...';
+        }
+    }
+    &.done {
+        background-color: limegreen;
+        &::after {
+            content: 'Done !';
+        }
+    }
+}

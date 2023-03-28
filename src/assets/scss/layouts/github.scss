@@ -1,0 +1,73 @@
+.github {
+    .jusdepixel {
+        font-size: 6vh;
+        line-height: 18vh;
+
+        &::first-letter {
+            font-size: 10vh;
+            margin-right: 1vh;
+        }
+    }
+    h2 {
+        font-size: 2.5vh;
+        font-weight: 300;
+        color: $gray-logo;
+        margin-bottom: 2vh;
+        i {
+            position: relative;
+            top: 2px;
+            margin-right: 0.3rem;
+        }
+        &.logo {
+            font-size: 1.9vh;
+            margin-left: 23vh;
+            margin-top: -6vh;
+        }
+    }
+    .link {
+        border-bottom: 1px solid $gray-border;
+        transition-duration: 150ms;
+        color: $gray-link;
+        font-weight: 300;
+        margin: 0 0.3rem;
+        &.only {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            font-weight: 400;
+        }
+        i {
+            position: relative;
+            top: -2px;
+            margin-left: 0.2rem;
+            font-size: 0.6rem;
+        }
+        &:hover {
+            color: $jusdepixel;
+            border-color: $jusdepixel;
+        }
+    }
+    .attached {
+        color: $gray-link;
+        font-weight: 300;
+        margin: 0 0.3rem;
+    }
+}
+
+.dark .github {
+    .repository {
+        color: $white-text;
+        .attached {
+            color: $white;
+        }
+        .link {
+            color: $white-text;
+            border-color: $white-border;
+            &:hover {
+                color: $jusdepixel;
+                border-color: $jusdepixel;
+            }
+        }
+    }
+}

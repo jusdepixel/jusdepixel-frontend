@@ -18,9 +18,11 @@
 @import "components/network";
 @import "components/project";
 @import "components/job";
+@import "components/badge";
 
 @import "layouts/admin";
 @import "layouts/me";
+@import "layouts/github";
 
 @import "pages/index";
 @import "pages/login";
