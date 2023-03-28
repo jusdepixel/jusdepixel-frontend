@@ -48,8 +48,8 @@ const Login = () => {
 
     return (
         <GuestLayout>
+            <ThemeToggler />
             <AuthCard logo={<ApplicationLogo className="login" />}>
-                <ThemeToggler />
                 <AuthSessionStatus className="mb-4" status={status} />
 
                 <form onSubmit={submitForm}>
