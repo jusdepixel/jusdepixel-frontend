@@ -67,3 +67,32 @@ h1 {
         }
     }
 }
+
+.mind {
+    margin: 10vh;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-name: mind-animation;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-shadow: -1px 1px 0 $jusdepixel,
+    1px 1px 0 $jusdepixel,
+    1px -1px 0 $jusdepixel,
+    -1px -1px 0 $jusdepixel;
+}
+
+@keyframes mind-animation {
+    0% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    10% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    20% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    30% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    40% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    50% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    60% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    70% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    80% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    90% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+    100% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+}
