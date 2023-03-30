@@ -74,13 +74,9 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     animation-name: mind-animation;
-    animation-duration: 2000ms;
+    animation-duration: 5000ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    text-shadow: -1px 1px 0 $jusdepixel,
-    1px 1px 0 $jusdepixel,
-    1px -1px 0 $jusdepixel,
-    -1px -1px 0 $jusdepixel;
 }
 
 @keyframes mind-animation {
@@ -95,4 +91,22 @@ h1 {
     80% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
     90% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
     100% { text-shadow: random(5) * 1px random(5) * 1px random(30) * 1px $jusdepixel; }
+}
+
+.back {
+    height: 2px;
+    width: 80%;
+    background-color: $gray-text;
+    .fore {
+        position: relative;
+        top: -1px;
+        height: 2px;
+        width: 70%;
+        background-color: $jusdepixel;
+        box-shadow:
+            -2px 4px 10px $jusdepixel,
+            4px -2px 10px $jusdepixel,
+            -4px 1px 10px $jusdepixel,
+            1px 1px 1px $jusdepixel;
+    }
 }

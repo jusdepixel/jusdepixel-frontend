@@ -13,6 +13,10 @@ const Index = () => {
                 <ThemeToggler />
 
                 <span className="mind">Mindcrew</span>
+
+                <div className="back">
+                    <div className="fore" />
+                </div>
             </div>
         </GuestLayout>
     )
